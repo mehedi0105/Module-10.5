@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align:center">Practise Day 10.5</h1>
+    <h1>{{ author | upper }}</h1>
+    <h1>{{ author | length }}</h1>
+    <h1>{{ author | add:"2" }}</h1>
+    <h1>{{ "i'm mehedi" | addslashes }}</h1>
+    <h1>{{ author | capfirst }}</h1>
+    <h1>{{ author | center:"15" }}</h1>
+    <h1>{{ "String with spaces" | cut:" " }}</h1>
+    <h1>{{ birthday | date:"D d M Y" }}</h1>
+    <h1>{{ "" | default:"nothing" }}</h1>
+    <h1>{{ courses | dictsort:"name" }}</h1>
+    <h1>{{ age | divisibleby:"3" }}</h1>
+    <h1>{{ author | escape }}</h1>
+    <h1>{{ 123434634643 | filesizeformat }}</h1>
+    <h1>{{ lst | first }}</h1>
+    <h1>{{ lst | last }}</h1>
+    <h1>{{ lst | join:" // " }}</h1>
+    <h1>{{ courses | linenumbers }}</h1>
+    <h1>{{ author | make_list }}</h1>
+    <h1>{{ courses | random }}</h1>
+    <h1>{{ author | slice:":2" }}</h1>
+    <h1>{{ "test bd ascii" | slugify  }}</h1>
+    <h1>{{ birthday | time:"H:i" }}</h1>
+    {% comment %} <h1>{{ birthday | timesince:comment_date }}</h1> {% endcomment %}
+    <h1>{{ "the Bestr fa Tpi" | title }}</h1>
+    <h1>{{ "lst" | unordered_list }}</h1>
+    <h1>{{ "the Bestr fa Tpi" | upper }}</h1>
+    <h1>{{ "the Bestr fa Tpi" | wordcount }}</h1>
+    <script src="app.js"></script>
+  </body>
+</html>
